@@ -1,0 +1,39 @@
+
+Historia de Usuario: Compra en MascoPET
+
+Título: Comprar Artículos para Mascotas
+
+Como amante de los animales y dueño de una mascota,
+
+Quiero explorar y comprar productos para mi mascota en línea,
+
+Para poder acceder a una variedad de productos y facilitar el proceso de compra desde la comodidad de mi hogar.
+
+Criterios de Aceptación:
+
+Exploración del Catálogo:
+
+Puedo ver una lista de productos en el catálogo, cada uno con una imagen, descripción y precio.
+Los productos están organizados en una cuadrícula que se ajusta dinámicamente según la cantidad de productos disponibles.
+El catálogo incluye al menos 10 productos diferentes.
+Agregar Productos al Carrito:
+
+Puedo agregar productos al carrito haciendo clic en el botón "Agregar al Carrito" debajo de cada producto.
+El resumen del carrito en la barra de navegación muestra la cantidad total de productos en el carrito.
+Actualizar y Eliminar del Carrito:
+
+Puedo ver los productos en mi carrito de compras en la página correspondiente.
+Puedo actualizar la cantidad de unidades de un producto en el carrito.
+Puedo eliminar un producto del carrito.
+Finalizar la Compra:
+
+Puedo acceder a la página de pago haciendo clic en la opción "Pagar" en la barra de navegación.
+Al finalizar la compra, debo proporcionar mi nombre y dirección de correo electrónico.
+Al hacer clic en el botón "Finalizar Compra", se simula el proceso de compra, se muestra un mensaje de agradecimiento y se vacía el carrito.
+Se simula el envío de un correo de confirmación a mi dirección de correo electrónico.
+Notas Adicionales:
+
+Esta historia de usuario refleja la experiencia del usuario al utilizar la aplicación de compras MascoPET.
+La aplicación debe ser fácil de usar, con un diseño moderno y minimalista.
+El objetivo principal es proporcionar una experiencia de compra cómoda y eficiente para los amantes de las mascotas.
+La historia de usuario se centra en las acciones del usuario y los resultados esperados después de interactuar con la aplicación.

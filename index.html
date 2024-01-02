@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+        <div id="logo-container">
+            <img src="https://clipart-library.com/images_k/dog-face-transparent/dog-face-transparent-6.png" alt="MascoPET Logo">
+            <h1>MascoPET</h1>
+        </div>
+        <nav>
+            <div id="carrito-resumen">Carrito: 0 artículos</div>
+        </nav>
+    </header>
+
+    <section id="catalogo" class="productos-grid">
+        <!-- Contenido del catálogo aquí -->
+        <div class="producto">
+            <img src="https://via.placeholder.com/150" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción del Producto 1</p>
+            <p>Precio: $10.99</p>
+            <button data-nombre="Producto 1" data-precio="10.99">Agregar al Carrito</button>
+        </div>
+
+        <!-- Repite este bloque para agregar más productos -->
+        
+        <div class="producto">
+            <img src="https://via.placeholder.com/150" alt="Producto 10">
+            <h3>Producto 10</h3>
+            <p>Descripción del Producto 10</p>
+            <p>Precio: $19.99</p>
+            <button data-nombre="Producto 10" data-precio="19.99">Agregar al Carrito</button>
+        </div>
+		
+		<div class="producto">
+            <img src="https://via.placeholder.com/150" alt="Producto 10">
+            <h3>Producto 10</h3>
+            <p>Descripción del Producto 10</p>
+            <p>Precio: $19.99</p>
+            <button data-nombre="Producto 10" data-precio="19.99">Agregar al Carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <!-- Contenido del carrito aquí -->
+    </section>
+
+    <section id="pago">
+        <!-- Contenido de pago aquí -->
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
