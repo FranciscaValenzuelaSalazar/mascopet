@@ -1,18 +1,110 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset de estilos y estilos generales */
+body, h1, h2, h3, p, ul, li, button, input, select {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #495057;
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
+    position: relative;
+    background-color: #f5f5f1; /* Cambia el color de fondo según tus preferencias */
     padding: 10px;
+}
+
+#brand {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#logo {
+    max-width: 60px;
+}
+
+#cart-icon {
+    display: flex;
+    align-items: center;
+}
+
+#cart-icon i {
+    font-size: 24px; /* Ajusta el tamaño del ícono según tus necesidades */
+    margin-right: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilo de botones y elementos de formulario */
+button, input, select {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de contenedores */
+#main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para los contenedores específicos de cada página */
+#catalog-container, #cart-container, #reservation-form {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo específico para la cuadrícula de servicios */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
+}
+
+.service-card {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.service-card button {
+    margin-top: auto;
+}
+
+#cart-summary {
+    text-align: center;
+    margin: 0;
 }
 
 #logo-container {
@@ -20,78 +112,79 @@ header {
     align-items: center;
 }
 
-#logo-container img {
-    width: 50px; /* Ajusta el tamaño del logotipo según tus necesidades */
+#search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex-grow: 1;
     margin-right: 10px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
+#cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+#cart-container2 {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
 }
 
-nav li {
-    margin-right: 20px;
+.cart-item-container {
+  display: inherit;
+  align-items: left;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: auto;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
+.cart-item-container img {
+  width: 60px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+  margin-right: 10px; /* Espaciado entre la imagen y el texto */
 }
 
-section {
-    padding: 20px;
+.cart-item-container p {
+  margin: 0;
+  display: inline;
 }
 
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-	align-items: center;
+.total-container {
+    /* Estilos para el contenedor del total general */
+    text-align: right; /* Alinear el texto a la derecha */
+    margin-top: 10px; /* Espacio entre los servicios y el total */
+    font-weight: bold; /* Texto en negrita para resaltar el total */
 }
 
-.producto {
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 15px;
-    background-color: #fff;
+.summary-wrapper {
+	padding: 5px;
+	margin-bottom: 20px;
 }
 
-.producto img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+#reservation-form {
+    display: grid-template-columns;
+    grid-template-columns: auto;
+    gap: 10px;
 }
 
-#carrito {
-    display: flex;
-    flex-direction: column;
+#reservation-form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-#carrito button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-#finalizar-compra {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#finalizar-compra:hover {
-    background-color: #0056b3;
+#reservation-form input,
+#reservation-form select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }

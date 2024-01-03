@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finalización de la Reserva</title>
+</head>
+<body>
+    <header>
+        <div id="brand">
+            <div id="logo-container">
+                <img src="images/logo.png" alt="Logo Peluquería Canina" id="logo">
+                <h2 id="logo-text">Perruquería</h2>
+            </div>
+        </div>
+    </header>
+
+	 <main id="main-content">
+        <div id="suggestions-container"></div>
+        <div id="cart-container">
+            <h2>Resumen Servicios</h2>
+            <div id="summary-container"></div>
+        </div>
+
+        <form id="reservation-form">
+            <table>
+                <tr>
+                    <td><label for="customerName">Nombre del Cliente:</label></td>
+                    <td><input type="text" id="customerName" oninput="handleCustomerNameInput()"></td>
+                </tr>
+                <tr>
+                    <td><label for="serviceDate">Fecha del Servicio:</label></td>
+                    <td><input type="date" id="serviceDate" oninput="handleServiceDateInput()"></td>
+                </tr>
+                <tr>
+                    <td><label for="selectedProfessional">Seleccionar Profesional:</label></td>
+                    <td>
+                        <select id="selectedProfessional" onchange="handleProfessionalSelection()">
+                            <!-- Opciones de profesionales -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="petName">Nombre Mascota:</label></td>
+                    <td><input type="text" id="petName"></td>
+                </tr>
+                <tr>
+                    <td><label for="petAge">Edad Mascota:</label></td>
+                    <td><input type="number" id="petAge"></td>
+                </tr>
+                <tr>
+                    <td><label for="petBreed">Raza Mascota:</label></td>
+                    <td><input type="text" id="petBreed"></td>
+                </tr>
+                <tr>
+                    <td><label for="addressInput">Dirección:</label></td>
+                    <td>
+                        <input type="text" id="addressInput" oninput="handleAddressInput()">
+                        <div id="addressSuggestions"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="finalizeReservation()">Finalizar Reserva</button></td>
+                </tr>
+            </table>
+
+            <button type="button" onclick="finalizeReservation()">Finalizar Reserva</button>
+        </form>
+		<button onclick="goToCart()">Volver a la Bolsa de Compras</button>
+    </main>
+
+	<script src="main.js"></script>
+    <script src="reservation.js"></script>
+</body>
+</html>
